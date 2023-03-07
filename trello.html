@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./trello.css" />
+    <title>Trello Kurylava</title>
+  </head>
+  <body>
+    <div id="prompt-form-container">
+          <form id="prompt-form">
+            <input name="title" type="text" placeholder="Title">
+            <input name="description" type="text" placeholder="Description">
+            <select class="selectUser" name="select">
+              <option>User1</option>
+              <option>User2</option>
+            </select>
+            <input name='cancel' type="button" value="cancel">
+            <input type="submit" value="confirm">
+          </form>
+        </div>
+    <div class="container">
+      <header class="header">
+        <h1 class="header-title">Trello</h1>
+        <div id="clock">00:00</div>
+      </header>
+      <main>
+        <section class="section" id="todo">
+          <div class="header-todo">
+            <h2 class="header-name">Todo:</h2>
+            <p class="counter-todo">0</p>
+          </div>
+          <div class="todoWrapper">
+          </div>
+          <input class="btnAdd" type="button" value="Add todo" id="show-button">
+        </section>
+        <section class="section progress">
+          <div class="header-progress">
+            <h2 class="header-name">In Progress</h2>
+            <p class="counter-progress">0</p>
+          </div>
+          <div class="progressWrapper"></div>
+        </section>
+        <section class="section done">
+          <div class="header-done">
+            <h2 class="header-name">Done</h2>
+            <p class="counter-done">0</p>
+          </div>
+          <div class="doneWrapper"></div>
+          <button class="btnDel">Delete all</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="./trello.js"></script>
+  </body>
+</html>
